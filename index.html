@@ -18,6 +18,13 @@
 		    <a href="http://www.enable-javascript.com" target="_blank">Enable JavaScript</a>
 	    </div>
 	</noscript>
+	
+	<!--[if lt IE 7]>
+	    <p class="browsehappy">
+	    	You are using an <strong>outdated</strong> browser.
+	    	Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+	   	</p>
+	<![endif]-->
 <!--
     <h1>Work in progress, please be patient ;)</h1>
     <p>
@@ -44,6 +51,12 @@
        <div ng-view=""></div>
     </div>
 
+	<pre>$location.path() = ({{$location.path()}})</pre>
+	<pre>$route.current.templateUrl = ({{$route.current.templateUrl}})</pre>
+	<pre>$route.current.params = ({{$route.current.params}})</pre>
+	<pre>$route.current.scope.name = ({{$route.current.scope.name}})</pre>
+	<pre>$routeParams = ({{$routeParams}})</pre>
+  
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
 	<script src="src/js/app/app.js"></script>

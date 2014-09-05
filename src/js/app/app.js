@@ -3,8 +3,13 @@ var app = angular.module('angularjs-starter', ['ngRoute']);
 app.config(function ($routeProvider) {
    $routeProvider
       .when('/', {
-    	  controller:  'src/js/controllers/main.js',
+    	  controller:  'main',
           templateUrl: 'src/html/views/main.html'
       })
       .otherwise({redirectTo: '/'});
+});
+
+
+app.controller('main', function($scope, $routeParams, $http) {
+     $scope.items = [];
 });
