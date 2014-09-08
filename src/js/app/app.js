@@ -11,5 +11,5 @@ app.config(function ($routeProvider) {
 
 
 app.controller('main', function($scope, $routeParams, $http) {
-     $scope.items = [];
+     $scope.url_name = "test";
 });
