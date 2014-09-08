@@ -1,4 +1,4 @@
-var app = angular.module('angularjs-starter', ['ngRoute']);
+var app = angular.module('GhFp', ['ngRoute']);
 
 app.config(function ($routeProvider) {
    $routeProvider

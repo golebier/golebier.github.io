@@ -1,15 +1,11 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html ng-app="GhFp" ng-app lang="en">
   <head>
   	<meta charset="utf-8">
     <title>Gra's Page</title>
     <link rel="icon" type="image/jpg"
     	href="https://lh3.googleusercontent.com/-XwggV2wvLzI/AAAAAAAAAAI/AAAAAAAABaA/fd5nvm-OTyI/s120-c/photo.jpg">
 	<link rel="stylesheet" href="src/css/TODO.css">
-  
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
-	<script src="src/js/app/app.js"></script>
   </head>
   <body>
   	<noscript>
@@ -23,12 +19,9 @@
 	    </div>
 	</noscript>
 	
-	<!--[if lt IE 7]>
-	    <p class="browsehappy">
-	    	You are using an <strong>outdated</strong> browser.
-	    	Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-	   	</p>
-	<![endif]-->
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 <!--
     <h1>Work in progress, please be patient ;)</h1>
     <p>
@@ -48,17 +41,21 @@
         <li>TODO: ProjectsOff</li>
       </ul>
     </p>
-  	<p>Nothing here {{'yet' + '!'}}</p>
 -->
 
     <div>
        <div ng-view=""></div>
     </div>
-
+  	<p>Nothing here {{'yet' + '!'}}</p>
 	<pre>$location.path() = ({{$location.path()}})</pre>
+	<pre>$location.url() = ({{$location.url()}})</pre>
 	<pre>$route.current.templateUrl = ({{$route.current.templateUrl}})</pre>
 	<pre>$route.current.params = ({{$route.current.params}})</pre>
 	<pre>$route.current.scope.name = ({{$route.current.scope.name}})</pre>
 	<pre>$routeParams = ({{$routeParams}})</pre>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
+	<script src="src/js/app/app.js"></script>
   </body>
 </html>
