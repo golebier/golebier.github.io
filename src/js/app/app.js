@@ -6,6 +6,10 @@ app.config(function ($routeProvider) {
     	  controller:  'main',
           templateUrl: 'src/html/views/main.html'
       })
+      .when('/test', {
+    	  controller:  'main',
+          templateUrl: 'src/html/views/main.html'
+      })
       .otherwise({redirectTo: '/'});
 });
 
