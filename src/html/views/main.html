@@ -1,9 +1,5 @@
 
 <div >
-   <a href="#/test">{{data.urlName}}</a>
-</div>
-
-<div >
 	<ul>
 		<li ng-repeat="account in accounts" >
 			<a href="{{account.url}}">{{account.name}}</a>
@@ -21,4 +17,8 @@
 	<pre>main: $route.current.templateUrl = ({{data.route_current_templateUrl}})</pre>
 	<pre>main: $route.current.params = ({{data.route_current_params}})</pre>
 	<pre>main: $routeParams = ({{data.routeParams}})</pre>
+</div>
+
+<div >
+   <a href="#/test">{{data.urlName}}</a>
 </div>
