@@ -14,5 +14,5 @@ app.controller('main', function($scope, $location, $route) {
     	 location_url: $location.url(), route_current_templateUrl: $route.current.templateUrl,
     	 route_current_params: $route.current.params}];
      $scope.accounts = [{ name: "Linkedin", url: "http://pl.linkedin.com/pub/rados%C5%82aw-go%C5%82%C4%99biewski/70/832/35/"},
-                        { name: "G+", url: "https://google.com/+RadoslawGolebiewski"}}
+                        { name: "G+", url: "https://google.com/+RadoslawGolebiewski"}];
 });
