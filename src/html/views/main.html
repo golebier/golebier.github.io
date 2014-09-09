@@ -3,17 +3,14 @@
    <a href="#/test">{{$data.urlName}}</a>
 </div>
 
-<!-- TODO commented for lack of correct data test.
 <div>
 	Test main: <input type="text" ng-model="name" /> {{name}}
 </div>
--->
 
 <div ng-controller="main" >
 	<pre>main: $location.path() = ({{$data.location_path}})</pre>
 	<pre>main: $location.url() = ({{$data.location_url}})</pre>
 	<pre>main: $route.current.templateUrl = ({{$data.route_current_templateUrl}})</pre>
 	<pre>main: $route.current.params = ({{$data.route_current_params}})</pre>
-	<pre>main: $route.current.scope.name = ({{$data.route_current_scope_name}})</pre>
 	<pre>main: $routeParams = ({{$data.routeParams}})</pre>
 </div>

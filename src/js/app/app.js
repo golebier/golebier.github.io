@@ -12,5 +12,5 @@ app.config(function ($routeProvider) {
 app.controller('main', function($scope, $location, $route) {
      $scope.data = [{ urlName: 'test', location_path: $location.path(),
     	 location_url: $location.url(), route_current_templateUrl: $route.current.templateUrl,
-    	 route_current_params: $route.current.params, route_current_scope_name: $route.current.scope.name}];
+    	 route_current_params: $route.current.params}];
 });
