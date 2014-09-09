@@ -10,7 +10,7 @@ app.config(function ($routeProvider) {
 });
 
 app.controller('main', ['$scope', function($scope) {
-     $scope.data.url_name = "test";
+     $scope.data.urlName = 'test';
      $scope.data.location_path = $location.path();
      $scope.data.location_url = $location.url();
      $scope.data.route_current_templateUrl = $route.current.templateUrl;
