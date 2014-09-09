@@ -11,4 +11,10 @@ app.config(function ($routeProvider) {
 
 app.controller('main', function($scope, $routeParams, $http) {
      $scope.url_name = "test";
+     $scope.location_path = $location.path();
+     $scope.location_url = $location.url();
+     $scope.route_current_templateUrl = $route.current.templateUrl;
+     $scope.route_current_params = $route.current.params;
+     $scope.route_current_scope_name = $route.current.scope.name;
+     $$scope.routeParams = routeParams;
 });
