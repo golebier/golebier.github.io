@@ -1,9 +1,9 @@
 
-<div ng-controller="main" >
+<div >
    <a href="#/test">{{$data.urlName}}</a>
 </div>
 
-<div ng-controller="main" >
+<div >
 	<ul>
 		<li ng-repeat="account in accounts" >
 			<a href="{{$account.url}}">{{$account.name}}</a>
@@ -15,7 +15,7 @@
 	Test main: <input type="text" ng-model="name" /> {{name}}
 </div>
 
-<div ng-controller="main" >
+<div >
 	<pre>main: $location.path() = ({{$data.location_path}})</pre>
 	<pre>main: $location.url() = ({{$data.location_url}})</pre>
 	<pre>main: $route.current.templateUrl = ({{$data.route_current_templateUrl}})</pre>
