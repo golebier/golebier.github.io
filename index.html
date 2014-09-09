@@ -48,12 +48,12 @@
     </div>
 
   	<p>Nothing here {{'yet' + '!'}}</p>
-	<pre>$location.path() = ({{$location_path}})</pre>
-	<pre>$location.url() = ({{$location_url}})</pre>
-	<pre>$route.current.templateUrl = ({{$route_current_templateUrl}})</pre>
-	<pre>$route.current.params = ({{$route_current_params}})</pre>
-	<pre>$route.current.scope.name = ({{$route_current_scope_name}})</pre>
-	<pre>$routeParams = ({{$routeParams}})</pre>
+	<pre>$location.path() = ({{$data.location_path}})</pre>
+	<pre>$location.url() = ({{$data.location_url}})</pre>
+	<pre>$route.current.templateUrl = ({{data.$route_current_templateUrl}})</pre>
+	<pre>$route.current.params = ({{$data.route_current_params}})</pre>
+	<pre>$route.current.scope.name = ({{$data.route_current_scope_name}})</pre>
+	<pre>$routeParams = ({{$data.routeParams}})</pre>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
