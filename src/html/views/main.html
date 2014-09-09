@@ -3,7 +3,7 @@
    <a href="#/test">{{$data.urlName}}</a>
 </div>
 
-<div>
+<div ng-controller="main" >
 	<ul>
 		<li ng-repeat="account in accounts" >
 			<a href="{{$account.url}}">{{$account.name}}</a>
