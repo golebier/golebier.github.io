@@ -16,5 +16,5 @@ app.controller('main', function($scope, $routeParams, $http) {
      $scope.route_current_templateUrl = $route.current.templateUrl;
      $scope.route_current_params = $route.current.params;
      $scope.route_current_scope_name = $route.current.scope.name;
-     $$scope.routeParams = routeParams;
+     $scope.routeParams = routeParams;
 });
