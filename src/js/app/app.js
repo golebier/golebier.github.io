@@ -20,7 +20,5 @@ app.controller('main', function($scope) {
 });
 
 app.controller('test', function($scope, $location, $route) {
-     $scope.data = [{ urlName: 'test', location_path: $location.path(),
-    	 location_url: $location.url()
-    	 route_current_params: $route.current.params}];
+     $scope.data = [{ urlName: 'test'}];
 });
