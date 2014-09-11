@@ -28,5 +28,4 @@ app.controller('test', function($scope, $location, $route) {
 	 };
 	 $scope.location_path = $location.path();
 	 $scope.location_url = $location.url();
-	 $scope.route_current_params = $route.current.params;
 });
