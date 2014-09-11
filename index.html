@@ -47,13 +47,15 @@
        <div ng-view="" class="ng-scope"></div>
     </div>
 
-  	<p>Nothing here {{'yet' + '!'}}</p>
-	<pre>$data.urlName = ({{data.urlName}})</pre>
-	<pre>$location.path() = ({{data.location_path}})</pre>
-	<pre>$location.url() = ({{data.location_url}})</pre>
-	<pre>$route.current.templateUrl = ({{data.route_current_templateUrl}})</pre>
-	<pre>$route.current.params = ({{data.route_current_params}})</pre>
-	<pre>$routeParams = ({{data.routeParams}})</pre>
+	<div ng-controller="test">
+	  	<p>Nothing here {{'yet' + '!'}}</p>
+		<pre>$data.urlName = ({{data.urlName}})</pre>
+		<pre>$location.path() = ({{data.location_path}})</pre>
+		<pre>$location.url() = ({{data.location_url}})</pre>
+		<pre>$route.current.templateUrl = ({{data.route_current_templateUrl}})</pre>
+		<pre>$route.current.params = ({{data.route_current_params}})</pre>
+		<pre>$routeParams = ({{data.routeParams}})</pre>
+	</div>
 	
 	<div ng-app ng-init="indexname = 'World'">
 		Say hello to: <input type="text" ng-model="indexname">
