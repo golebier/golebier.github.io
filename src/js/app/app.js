@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
           templateUrl: 'src/html/views/main.html'
       })
       .when('/test', {
-    	  controller:  'test',
+    	  controller:  { 'test', test },
           templateUrl: 'src/html/views/test.html'
       })
       .otherwise({redirectTo: '/'});
@@ -29,5 +29,3 @@ var test = function($scope, $location, $route) {
 	 $scope.location_path = $location.path();
 	 $scope.location_url = $location.url();
 };
-
-app.controller('test', test);
