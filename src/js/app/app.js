@@ -19,6 +19,6 @@ app.controller('main', function($scope) {
                         { name: "local test", url: "#/test"}];
 });
 
-app.controller('test', function($scope, $location, $route) {
+app.controller('test', function($scope) {
      $scope.data = [{ urlName: 'test'}];
 });
