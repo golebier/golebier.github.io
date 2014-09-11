@@ -14,11 +14,13 @@ app.config(function ($routeProvider) {
 });
 
 app.controller('main', function($scope) {
-     $scope.accounts = [{ name: "Linkedin", url: "http://pl.linkedin.com/pub/rados%C5%82aw-go%C5%82%C4%99biewski/70/832/35/"},
-                        { name: "G+", url: "https://google.com/+RadoslawGolebiewski"},
-                        { name: "local test", url: "#/test"}];
+     $scope.accounts = [
+                        	{ name: "Linkedin", url: "http://pl.linkedin.com/pub/rados%C5%82aw-go%C5%82%C4%99biewski/70/832/35/"},
+                        	{ name: "G+", url: "https://google.com/+RadoslawGolebiewski"},
+                        	{ name: "local test", url: "#/test"}
+                    	];
 });
 
 app.controller('test', function($scope) {
-     $scope.data = [{ urlName: 'test'}];
+     $scope.data.urlName = 'test';
 });
