@@ -22,5 +22,5 @@ app.controller('main', function($scope) {
 });
 
 app.controller('test', function($scope) {
-     $scope.data.urlName = 'test';
+     $scope.urlName = 'test';
 });
