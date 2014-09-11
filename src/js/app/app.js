@@ -21,11 +21,13 @@ app.controller('main', function($scope) {
                     	];
 });
 
-app.controller('test', function($scope, $location, $route) {
-     $scope.urlName = 'test';
-     $scope.getName = function() {
-    	 return $scope.name;
+var test = function($scope, $location, $route) {
+    $scope.urlName = 'test';
+    $scope.getName = function() {
+   	 return $scope.name;
 	 };
 	 $scope.location_path = $location.path();
 	 $scope.location_url = $location.url();
-});
+};
+
+app.controller('test', test);
