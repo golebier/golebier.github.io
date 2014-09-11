@@ -23,4 +23,7 @@ app.controller('main', function($scope) {
 
 app.controller('test', function($scope) {
      $scope.urlName = 'test';
+     $scope.getName = function() {
+    	 return $scope.name;
+	 };
 });
