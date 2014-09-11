@@ -7,7 +7,14 @@ app.config(function ($routeProvider) {
           templateUrl: 'src/html/views/main.html'
       })
       .when('/test', {
-    	  controller:  'test',
+    	  controller:  function($scope, $location, $route) {
+			    		    $scope.urlName = 'test';
+			    		    $scope.getName = function() {
+			    		   	 return $scope.name;
+			    			 };
+			    			 $scope.location_path = $location.path();
+			    			 $scope.location_url = $location.url();
+    	  				},
           templateUrl: 'src/html/views/test.html'
       })
       .otherwise({redirectTo: '/'});
@@ -20,14 +27,3 @@ app.controller('main', function($scope) {
                         	{ name: "local test", url: "#/test"}
                     	];
 });
-
-var test = function($scope, $location, $route) {
-    $scope.urlName = 'test';
-    $scope.getName = function() {
-   	 return $scope.name;
-	 };
-	 $scope.location_path = $location.path();
-	 $scope.location_url = $location.url();
-};
-
-app.controller('test', test);
