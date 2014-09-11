@@ -9,12 +9,12 @@ app.config(function ($routeProvider) {
       .when('/test', {
     	  controller:  function($scope, $location, $route) {
 			    		    $scope.urlName = 'test';
-			    		    $scope.getName = function() {
-			    		   	 	return $scope.name;
-			    			};
 			    			$scope.location_path = $location.path();
 			    			$scope.location_url = $location.url();
 
+			    		    $scope.getName = function() {
+			    		   	 	return $scope.name;
+			    			};
 			    		    $scope.getNameWith = function(addThis) {
 			    		   	 	return $scope.name + addThis;
 			    			};
