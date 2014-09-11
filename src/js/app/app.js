@@ -10,10 +10,14 @@ app.config(function ($routeProvider) {
     	  controller:  function($scope, $location, $route) {
 			    		    $scope.urlName = 'test';
 			    		    $scope.getName = function() {
-			    		   	 return $scope.name;
-			    			 };
-			    			 $scope.location_path = $location.path();
-			    			 $scope.location_url = $location.url();
+			    		   	 	return $scope.name;
+			    			};
+			    			$scope.location_path = $location.path();
+			    			$scope.location_url = $location.url();
+
+			    		    $scope.getNameWith = function(addThis) {
+			    		   	 	return $scope.name + addThis;
+			    			};
     	  				},
           templateUrl: 'src/html/views/test.html'
       })
