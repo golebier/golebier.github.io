@@ -38,7 +38,7 @@ app.controller('TextAreaWithLimitCtrl', function($scope) {
 	// TODO 3 steps colored info, by font or text background;
 	// TODO clear, add cleaning
 	// TODO then use clean just for tests
-	// TODO cut more then valid
+	// TODO cut that is more then valid
 	$scope.remaining = function () {
 		return MAX_LEN - $scope.message.length;
 	};
