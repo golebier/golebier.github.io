@@ -34,7 +34,7 @@ app.controller('main', function($scope) {
 
 app.controller('TextAreaWithLimitCtrl', function($scope) {
 	var MAX_LEN = 128;
-	var WARN_THRESHOLD = 96;
+	var WARN_THRESHOLD = 120;
 	// TODO 3 steps colored info, by font or text background;
 	// TODO clear, add cleaning
 	// TODO then use clean just for tests
