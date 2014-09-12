@@ -36,6 +36,8 @@ app.controller('TextAreaWithLimitCtrl', function($scope) {
 	var MAX_LEN = 128;
 	var WARN_THRESHOLD = 96;
 	// TODO 3 steps colored info, by font or text background;
+	// TODO clear, add cleaning
+	// TODO send, add hasValidLength(), then use clean just for tests
 	$scope.remaining = function () {
 		return MAX_LEN - $scope.message.length;
 	};
