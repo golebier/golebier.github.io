@@ -42,6 +42,10 @@ app.controller('TextAreaWithLimitCtrl', function($scope) {
 		return MAX_LEN - $scope.message.length;
 	};
 
+	$scope.hasValidLength = function () {
+		return $scope.remaining() > 0;
+	};
+
 	$scope.shouldWarn = function () {
 		return $scope.remaining() < WARN_THRESHOLD;
 	};
