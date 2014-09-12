@@ -24,5 +24,19 @@
 		<pre>test: $location.path() = ({{location_path}})</pre>
 		<pre>test: $location.url() = ({{location_url}})</pre>
 		<pre>test: $route.current.params = ({{route_current_params}})</pre>
+		
+	<div class="container" ng-controller="TextAreaWithLimitCtrl">
+	    <span ng-class="{'text-warning' : shouldWarn()}">
+	    	Remaining: {{remaining()}}
+    	</span>
 
+		<div class="row">
+			<textarea ng-model="message">{{message}}</textarea>
+		</div>
+
+		<div class="row">
+			<button ng-disabled="!hasValidLength()" ng-click="send()">Send</button>
+			<button ng-click="clear()">Clear</button>
+		</div>
+	</div>
 </div>
