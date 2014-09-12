@@ -33,6 +33,9 @@ app.controller('main', function($scope) {
 });
 
 app.controller('TextAreaWithLimitCtrl', function($scope) {
+	var MAX_LEN = 128;
+	var WARN_THRESHOLD = 96;
+	// TODO 3 steps colored info, by font or text background;
 	$scope.remaining = function () {
 		return MAX_LEN - $scope.message.length;
 	};
