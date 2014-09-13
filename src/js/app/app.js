@@ -56,3 +56,10 @@ app.controller('TextAreaWithLimitCtrl', function($scope) {
 		return $scope.remaining() < WARN_THRESHOLD_CRITICAL;
 	};
 });
+
+// TODO add more
+var NotificationsService = function () {
+	this.MAX_LEN = 10;
+	this.notificationsArchive = new NotificationsArchive();
+	this.notifications = [];
+};
