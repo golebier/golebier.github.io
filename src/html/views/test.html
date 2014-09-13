@@ -26,7 +26,7 @@
 		<pre>test: $route.current.params = ({{route_current_params}})</pre>
 		
 	<div class="container" ng-controller="TextAreaWithLimitCtrl" ng-init="message = ''">
-	    <span ng-class="{'text-warning' : shouldWarn()}">
+	    <span ng-class="{'text-warning' : shouldWarn(), 'text-warning-critical' : shouldWarnCritical()}">
 	    	Remaining: {{remaining()}}
     	</span>
 

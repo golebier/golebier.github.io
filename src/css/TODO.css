@@ -2,3 +2,12 @@
 .text-warning {
 	color: red;
 }
+
+.text-warning-critical {
+	font-size: 200%;
+    font-weight: bold;
+}
+
+.strike {
+  text-decoration: line-through;
+}
