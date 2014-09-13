@@ -63,3 +63,12 @@ var NotificationsService = function () {
 	this.notificationsArchive = new NotificationsArchive();
 	this.notifications = [];
 };
+
+NotificationsService.prototype.push = function (notification) {
+	var newLen, notificationToArchive;
+	newLen = this.notifications.unshift(notification);
+	if (this.MAX_LEN < newLen) {
+		notificationToArchive = this.notifications.pop();
+		this.notificationsArchive.archive(notificationToArchive);
+	}
+};
