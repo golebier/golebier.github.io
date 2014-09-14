@@ -19,9 +19,41 @@ app.controller('footer', function($scope) {
 });
 
 app.controller('menu', function($scope) {
-     $scope.menu.main = [
+     $scope.main = [
                             { name: "Strona Główna",
                                url: "#/main",
                             }
                         ];
 });
+
+
+//<p id="galleries" title="TODO: Dodać informacje?">
+// Fotogaleria
+//</p>
+//</li>-->
+//   <li>
+//     <p id="ischool">
+// Cyfrowa Szkola
+//</p>
+//</li>
+//<li>
+//<p id="schoollow">
+// Prawo Szkolne
+//</p>
+//</li>
+//   <li>
+//     <p id="aboutas">
+// O Szkole
+//</p>
+//</li>
+//   <li>
+//     <p id="contact">
+// Kontakt
+//</p>
+//</li>
+//
+//<li>
+//<a target="_blank" href="http://www.sp12plock.pl/">
+// Archiwalna
+//</a>
+//</li>
