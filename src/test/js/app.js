@@ -1,7 +1,7 @@
 
 var app = angular.module('sp12', ['ngRoute']);
 
-app.controller('footerAuthor', function($scope) {
+app.controller('footer', function($scope) {
      $scope.accounts = [
                         	{ name: "Linkedin",
                         	   url: "http://pl.linkedin.com/pub/rados%C5%82aw-go%C5%82%C4%99biewski/70/832/35/",

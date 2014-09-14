@@ -374,13 +374,13 @@
 
 <!-- TODO as first do the ajs footer -->
 
-<div id="footer">
+<div id="footer" ng-controller="footer">
 	<p class="copyright">
 
      <b>Copyright (c) <b id="year">1979</b>, the Gra projects.</b></br>
 
      <b>@author Gra Gołębiewski Radosław A.</b>
-     <ul ng-controller="footerAuthor">
+     <ul>
      	<li ng-repeat="account in accounts">
                 <a target="_blank" href="{{account.url}}">
                   <img
