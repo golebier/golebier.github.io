@@ -64,8 +64,8 @@
     <div id="menu" ng-controller="menu">
           <ul id="main" ng-repeater="item in menu.main">
           <li>
-            <a href="#/main">
-                Strona Główna
+            <a href="{{item.url}}">
+                {{item.name}}
             </a>
           </li>
              <p id="galleries" title="TODO: Dodać informacje?">

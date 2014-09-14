@@ -17,3 +17,11 @@ app.controller('footer', function($scope) {
                             }
                         ];
 });
+
+app.controller('menu', function($scope) {
+     $scope.menu.main = [
+                            { name: "Strona Główna",
+                               url: "#/main",
+                            }
+                        ];
+});
