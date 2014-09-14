@@ -46,11 +46,6 @@
 
     <div id="header">
 
-	<div ng-app ng-init="indexname = 'World'">
-		Say hello to: <input type="text" ng-model="indexname">
-		<h1>Hello, {{indexname}}!</h1>
-	</div>
-
      <div id="logo">
   		<h1>
   		  <a href="http://www.sp12plock.pl/new">
@@ -241,6 +236,12 @@
 
 			<div id="corecontent">
           <!--  place for core content, do not change this div manualy. -->
+
+				<div ng-app ng-init="indexname = 'World'">
+					Say hello to: <input type="text" ng-model="indexname">
+					<h1>Hello, {{indexname}}!</h1>
+				</div>
+
 			</div>
 
 		</div>
