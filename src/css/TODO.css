@@ -1,10 +1,10 @@
 
 .text-warning {
-	color: red;
+    color: red;
 }
 
 .text-warning-critical {
-	font-size: 200%;
+    font-size: 200%;
     font-weight: bold;
 }
 

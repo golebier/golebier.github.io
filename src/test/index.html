@@ -15,7 +15,7 @@
 -->
 
 <html ng-app="sp12" xmlns="http://www.w3.org/1999/xhtml"
-	  xml:lang="pl" dir="ltr" lang="pl" xmlns:(null)1="http://www.w3.org/TR/REC-html40">
+      xml:lang="pl" dir="ltr" lang="pl" xmlns:(null)1="http://www.w3.org/TR/REC-html40">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <link rel="shortcut icon" type="image/jpg" href="images/logo.jpg"/>
@@ -25,18 +25,18 @@
    <link href="css/base.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-  	<noscript>
-	    <style type="text/css">
-	        .pagecontainer {display:none;}
-	    </style>
-	    <div class="noscriptmsg">
-		    JavaScript jest nie aktywna.
-		    Tresc tej strony przygotowana jest dla nowoczesnych przegladarek internetowych.
-		    <a href="http://www.enable-javascript.com" target="_blank">Wyjasninie jak wlaczyc obsluge JavaScript</a>
-		    Lub przejdz na stara wersje strony, tresci moga byc nie aktualne.
-	    </div>
-	</noscript>
-	
+      <noscript>
+        <style type="text/css">
+            .pagecontainer {display:none;}
+        </style>
+        <div class="noscriptmsg">
+            JavaScript jest nie aktywna.
+            Tresc tej strony przygotowana jest dla nowoczesnych przegladarek internetowych.
+            <a href="http://www.enable-javascript.com" target="_blank">Wyjasninie jak wlaczyc obsluge JavaScript</a>
+            Lub przejdz na stara wersje strony, tresci moga byc nie aktualne.
+        </div>
+    </noscript>
+    
   <!--[if lt IE 7]>
       <p class="browsehappy">Urzywasz <strong>przestarzalej</strong> przegladarki internetowej.
       Sprawdz <a href="http://browsehappy.com/">aktualizacje swojej przegladarki</a> aby poprawic doznania internetowe.</p>
@@ -47,10 +47,10 @@
     <div id="header">
 
      <div id="logo">
-  		<h1>
-  		  <a href="http://www.sp12plock.pl/new">
-  		    <span>
-  		      Szkoła Podstawowa nr 12 im. Miry Zimińskiej-Sygietyńskiej w Płocku.
+          <h1>
+            <a href="http://www.sp12plock.pl/new">
+              <span>
+                Szkoła Podstawowa nr 12 im. Miry Zimińskiej-Sygietyńskiej w Płocku.
           </span>
           <img src="images/logo.jpg"
                alt="else"
@@ -58,23 +58,22 @@
                width="80">
         </a>
       </h1>
-  		<p></p>
-  	</div>
+          <p></p>
+      </div>
 
-	<div id="menu">
-  		<ul id="main">
-    			<li>
-    			  <p id="welcome">
-              Strona Główna
-            </p>
-          </li> <!-- <li class="current_page_item" -->
-    			<!--<li>
-    			  <p id="galleries" title="TODO: Dodać informacje?">
+    <div id="menu" ng-controller="menu">
+          <ul id="main" ng-repeater="item in menu.main">
+          <li>
+            <a href="#/main">
+                Strona Główna
+            </a>
+          </li>
+             <p id="galleries" title="TODO: Dodać informacje?">
               Fotogaleria
             </p>
           </li>-->
-    			<li>
-    			  <p id="ischool">
+                <li>
+                  <p id="ischool">
               Cyfrowa Szkola
             </p>
           </li>
@@ -83,13 +82,13 @@
               Prawo Szkolne
             </p>
           </li>
-    			<li>
-    			  <p id="aboutas">
+                <li>
+                  <p id="aboutas">
               O Szkole
             </p>
           </li>
-    			<li>
-    			  <p id="contact">
+                <li>
+                  <p id="contact">
               Kontakt
             </p>
           </li>
@@ -99,22 +98,22 @@
               Archiwalna
             </a>
           </li>
-  		</ul>
-	</div>
+          </ul>
+    </div>
 
 </div>
 
 <div id="wrapper">
-	<div id="page">
-		<div id="sidebar1" class="sidebar">
-			<ul>
-				<li>
-					<h2 id="school">
+    <div id="page">
+        <div id="sidebar1" class="sidebar">
+            <ul>
+                <li>
+                    <h2 id="school">
               <a class="menuspec">
                 &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
               </a>
           </h2>
-					<ul>
+                    <ul>
 
             <li id="planzajec">
               <a class="specialeffects">
@@ -170,8 +169,8 @@
                 &nbsp;&nbsp; Stowarzyszenie &nbsp;&nbsp;
               </a>
             </li>
-					</ul>
-				</li>
+                    </ul>
+                </li>
 
 
         <li>
@@ -195,19 +194,19 @@
           </ul>
         </li>
 
-			    <li>
-					<h2 id="sport">
+                <li>
+                    <h2 id="sport">
               <a class="menuspec">
                 &nbsp;&nbsp; Sport &nbsp;&nbsp;
               </a>
           </h2>
-					<ul>
-						<li id="posos">
+                    <ul>
+                        <li id="posos">
               <a class="specialeffects">
                 &nbsp;&nbsp; Program Otwarte Szkolne Obiekty Sportowe &nbsp;&nbsp;
               </a>
             </li>
-						<!--<li id="oslmkd" title="TODO: Dodać informacje?">
+                        <!--<li id="oslmkd" title="TODO: Dodać informacje?">
               <a class="specialeffects">
                 &nbsp;&nbsp; ORLEN Szkolna Liga MDK &nbsp;&nbsp;
               </a>
@@ -219,55 +218,55 @@
               </a>
             </li>
 
-					</ul>
-				</li>
-			</ul>
+                    </ul>
+                </li>
+            </ul>
 
-		</div>
+        </div>
 
-		<div id="content">
-			<div class="flower">
-			   <img
-			       src="images/sp12.jpg"
-			       alt=""
-			       width="510"
-			       height="250" />
-		   </div>
+        <div id="content">
+            <div class="flower">
+               <img
+                   src="images/sp12.jpg"
+                   alt=""
+                   width="510"
+                   height="250" />
+           </div>
 
-				<div ng-view="" class="ng-scope"></div>
+                <div ng-view="" class="ng-scope"></div>
 
-		</div>
+        </div>
 
-		<div id="sidebar2" class="sidebar">
-			<ul>
-				<li>
-						<div>
-							<h2 id="search">
+        <div id="sidebar2" class="sidebar">
+            <ul>
+                <li>
+                        <div>
+                            <h2 id="search">
                 <a class="menuspec">
                   &nbsp;&nbsp; Szukaj &nbsp;&nbsp;
                 </a>
               </h2>
               <form id="searchform" method="get" action="https://www.google.com/search">
-    						<input type="text" name="q" id="s" size="15" value="" />
+                            <input type="text" name="q" id="s" size="15" value="" />
                 <input type="submit" value="Aktualna" />
-    						<input type="hidden" name="sitesearch" value="http://www.sp12plock.pl/" />
+                            <input type="hidden" name="sitesearch" value="http://www.sp12plock.pl/" />
               </form>
               <form id="searchform" method="get" action="https://www.google.com/search">
                 <input type="text" name="q" id="s" size="15" value="" />
                 <input type="submit" value="Nowa" />
                 <input type="hidden" name="sitesearch" value="http://www.sp12plock.pl/new/" />
               </form>
-						</div>
-				</li>
+                        </div>
+                </li>
 
-				<li>
-					<h2 id="parentinfo">
+                <li>
+                    <h2 id="parentinfo">
               <a class="menuspec">
                 &nbsp;&nbsp; Informacje &nbsp;&nbsp;
               </a>
           </h2>
-					<ul>
-						<li id="eRegister">
+                    <ul>
+                        <li id="eRegister">
               <a class="specialeffects">
                 &nbsp;&nbsp; e-dziennik &nbsp;&nbsp;
               </a>
@@ -277,23 +276,23 @@
                 &nbsp;&nbsp; Pierwszak w szkole &nbsp;&nbsp;
               </a>
             </li>
-						<li id="meetings">
+                        <li id="meetings">
               <a class="specialeffects">
                 &nbsp;&nbsp; Zebrania &nbsp;&nbsp;
               </a>
             </li>
-						<li id="schoolCalendar">
+                        <li id="schoolCalendar">
               <a class="specialeffects">
                 &nbsp;&nbsp; Kalendarz Szkolny &nbsp;&nbsp;
               </a>
             </li>
-						<li id="subjectCompetitions">
+                        <li id="subjectCompetitions">
               <a class="specialeffects">
                 &nbsp;&nbsp; Konkursy Przedmiotowe &nbsp;&nbsp;
               </a>
             </li>
-					</ul>
-				</li>
+                    </ul>
+                </li>
 
         <li>
           <h2 id="Library">
@@ -366,18 +365,18 @@
           </ul>
         </li>
 
-			</ul>
-		</div>
+            </ul>
+        </div>
 
-		<div style="clear: both;">&nbsp;</div>
-	</div>
+        <div style="clear: both;">&nbsp;</div>
+    </div>
 </div>
 
 
 <!-- TODO as first do the ajs footer -->
 
 <div id="footer" ng-controller="footer">
-	<p class="copyright">
+    <p class="copyright">
 
      <b>Copyright (c) <b id="year">1979</b>, the Gra projects.</b></br>
 
@@ -415,11 +414,11 @@
             width="12">
       </a>
 
-	</p>
+    </p>
 </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
-	<script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
