@@ -32,21 +32,14 @@ app.controller('menu', function($scope) {
                             { name: "Prawo Szkolne",
                                url: "#/schoollow",
                             },
+                            { name: "O Szkole",
+                               url: "#/aboutas",
+                            },
+                            { name: "Kontakt",
+                               url: "#/contact",
+                            },
+                            { name: "Archiwalna",
+                               url: "http://www.sp12plock.pl/",
+                            }
                         ];
 });
-
-//     <p id="aboutas">
-// O Szkole
-//</p>
-//</li>
-//   <li>
-//     <p id="contact">
-// Kontakt
-//</p>
-//</li>
-//
-//<li>
-//<a target="_blank" href="http://www.sp12plock.pl/">
-// Archiwalna
-//</a>
-//</li>
