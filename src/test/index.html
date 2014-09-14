@@ -380,7 +380,8 @@
      <b>Copyright (c) <b id="year">1979</b>, the Gra projects.</b></br>
 
      <b>@author Gra Gołębiewski Radosław A.</b>
-     	<div ng-controller="footerAuthor" ng-repeat="acount in acounts">
+     <ul>
+     	<li ng-controller="footerAuthor" ng-repeat="acount in acounts">
                 <a target="_blank" href="{{acount.url}}">
                   <img
                       src="{{acount.iconUrl}}"
@@ -388,7 +389,8 @@
                       height="12"
                       width="12">
                 </a>
-        </div>
+        </li>
+      </ul>
       </br>
       <b>Tested&Released for:</b>
       <a target="_blank" href="http://chrome">
