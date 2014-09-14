@@ -22,26 +22,19 @@ app.controller('menu', function($scope) {
      $scope.main = [
                             { name: "Strona Główna",
                                url: "#/main",
-                            }
+                            },
+                            { name: "Fotogaleria",
+                               url: "#/fotogallery",
+                            },
+                            { name: "Cyfrowa Szkola",
+                               url: "#/ishool",
+                            },
+                            { name: "Prawo Szkolne",
+                               url: "#/schoollow",
+                            },
                         ];
 });
 
-
-//<p id="galleries" title="TODO: Dodać informacje?">
-// Fotogaleria
-//</p>
-//</li>-->
-//   <li>
-//     <p id="ischool">
-// Cyfrowa Szkola
-//</p>
-//</li>
-//<li>
-//<p id="schoollow">
-// Prawo Szkolne
-//</p>
-//</li>
-//   <li>
 //     <p id="aboutas">
 // O Szkole
 //</p>
