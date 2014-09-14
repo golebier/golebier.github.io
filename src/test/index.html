@@ -62,7 +62,7 @@
       </div>
 
     <div id="menu" ng-controller="menu">
-          <ul id="main" ng-repeater="item in menu.main">
+          <ul id="main" ng-repeat="item in menu.main">
           <li>
             <a href="{{item.url}}">
                 {{item.name}}
