@@ -61,43 +61,13 @@
           <p></p>
       </div>
 
-    <div id="menu" ng-controller="menu">
+    <div ng-controller="menu" id="menu">
           <ul ng-repeat="item in menu.main" id="main">
-          <li>
-            <a href="{{item.url}}">
-                {{item.name}}
-            </a>
-          </li>
-             <p id="galleries" title="TODO: Dodać informacje?">
-              Fotogaleria
-            </p>
-          </li>-->
-                <li>
-                  <p id="ischool">
-              Cyfrowa Szkola
-            </p>
-          </li>
-          <li>
-            <p id="schoollow">
-              Prawo Szkolne
-            </p>
-          </li>
-                <li>
-                  <p id="aboutas">
-              O Szkole
-            </p>
-          </li>
-                <li>
-                  <p id="contact">
-              Kontakt
-            </p>
-          </li>
-
-          <li>
-            <a target="_blank" href="http://www.sp12plock.pl/">
-              Archiwalna
-            </a>
-          </li>
+	          <li>
+	            <a href="{{item.url}}">
+	                {{item.name}}
+	            </a>
+	          </li>
           </ul>
     </div>
 
