@@ -12,8 +12,8 @@ app.controller('footerAuthor', function($scope) {
                            iconUrl: "https://github.com/golebier/TemplateTeXCv/raw/master/Icons/gplus.jpg"
                             },
                         	{ name: "Github",
-                                url: "https://github.com/golebier",
-                            iconUrl: "https://github.com/golebier/TemplateTeXCv/raw/master/Icons/github.png"
+                               url: "https://github.com/golebier",
+                           iconUrl: "https://github.com/golebier/TemplateTeXCv/raw/master/Icons/github.png"
                             }
                     	];
 });
