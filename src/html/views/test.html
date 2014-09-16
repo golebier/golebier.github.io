@@ -4,9 +4,11 @@
     <h1>Hello, {{name}}!</h1>
 </div>
 
-<button ng:click="value = value + 1">
-	{{value}}
-</button>
+<div ng-app ng-init="value = 10">
+	<button ng:click="value = value + 1">
+		{{value}}
+	</button>
+</div>
 
 <div>
     <div>
