@@ -42,14 +42,40 @@ app.controller('menu', function($scope) {
                                url: "http://www.sp12plock.pl/",
                             }
                         ];
+
      $scope.parentinfo = [
                             { name: "e-dziennik",
                                url: "#/eRegister/",
                             }
                 ];
+ 
      $scope.school = [
                             { name: "Plan zajęć",
                                 url: "#/lessonsPlans/",
+                            },
+                            { name: "Rada Pedagogiczna",
+                                url: "#/radapedadogiczna",
+                            },
+                            { name: "Samorząd Uczniowski",
+                                url: "#/samorzaduczniowski",
+                            },
+                            { name: "Osiągnięcia",
+                                url: "#/osiagniecia",
+                            },
+                            { name: "Zajęcia Pozalekcyjne",
+                                url: "http://www.sp12plock.pl/zajecia_pozalekcyjne.html/",
+                            },
+                            { name: "Świetlica",
+                                url: "#/swietlica/",
+                            },
+                            { name: "Podręczniki",
+                                url: "#/podreczniki/",
+                            },
+                            { name: "Stypendia",
+                                url: "#/stypendia/",
+                            },
+                            { name: "Stowarzyszenie",
+                                url: "#/stowarzyszenie/",
                             }
                       ];
 });
