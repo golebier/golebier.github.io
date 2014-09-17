@@ -42,4 +42,9 @@ app.controller('menu', function($scope) {
                                url: "http://www.sp12plock.pl/",
                             }
                         ];
+     $scope.parentinfo = [
+                    { name: "&nbsp;&nbsp; e-dziennik &nbsp;&nbsp;",
+                       url: "#/eRegister/",
+                    }
+                ];
 });
