@@ -43,7 +43,7 @@ app.controller('menu', function($scope) {
                             }
                         ];
      $scope.parentinfo = [
-                    { name: "&nbsp;&nbsp; e-dziennik &nbsp;&nbsp;",
+                    { name: "e-dziennik",
                        url: "#/eRegister/",
                     }
                 ];
