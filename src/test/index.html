@@ -109,7 +109,7 @@
         
                 </div>
 
-                <div id="sidebar2" class="sidebar">
+                <div id="sidebar2" class="sidebar" ng-controller="menu">
                     <ul>
                         <li>
                             <div>
@@ -137,7 +137,7 @@
                                     &nbsp;&nbsp; Informacje &nbsp;&nbsp;
                                   </a>
                             </h2>
-							<ul id="parentinfo" ng-repeat="item in parentinfo">
+							<ul ng-repeat="item in parentinfo">
 							   <li>
 							     <a class="specialeffects" href="{{item.url}}">
 							         {{item.name}}
