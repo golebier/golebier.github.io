@@ -43,13 +43,13 @@ app.controller('menu', function($scope) {
                             }
                         ];
      $scope.parentinfo = [
-		                    { name: "e-dziennik",
-		                       url: "#/eRegister/",
-		                    }
+                            { name: "e-dziennik",
+                               url: "#/eRegister/",
+                            }
                 ];
      $scope.school = [
-							{ name: "Plan zajęć",
-								url: "#/lessonsPlans/",
-							}
+                            { name: "Plan zajęć",
+                                url: "#/lessonsPlans/",
+                            }
                       ];
 });
