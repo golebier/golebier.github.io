@@ -80,9 +80,7 @@
 <!-- TODO animate, show/hide
      TODO change css definition
 -->
-              <div id="sidebar1" ng-controller="menu"
-                   ng-style="isFasle() && {'border-bottom': 'none'} ||
-                             isTrue() && {'border-bottom': '1px #BBBBBB dashed'}">
+              <div id="sidebar1" ng-controller="menu" ng-class="{'lesssidebar' : isFasle(), 'sidebar' : isTrue()}">
                   <ul ng-mouseleave="show=false">
                       <li>
                             <h2 id="school">
