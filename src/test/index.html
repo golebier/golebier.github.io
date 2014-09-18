@@ -79,10 +79,10 @@
             <div id="page">
 <!-- TODO animate, show/hide -->
               <div id="sidebar1" class="sidebar" ng-controller="menu">
-                  <ul>
+                  <ul ng-init="show=false" ng-mouseleave="show=false">
                       <li>
                             <h2 id="school">
-                                <a class="menuspec" ng-init="show=false" ng-mousedown="show=true" ng-mouseleave="show=false">
+                                <a class="menuspec" ng-mousedown="show=true">
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
