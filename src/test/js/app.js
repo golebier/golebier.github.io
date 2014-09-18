@@ -46,7 +46,19 @@ app.controller('menu', function($scope) {
      $scope.parentinfo = [
                             { name: "e-dziennik",
                                url: "#/eRegister/",
-                            }
+                            },
+                            { name: "Pierwszak w szkole",
+                               url: "#/fromkinderganden/",
+                            },
+                            { name: "Zebrania",
+                               url: "#/meetings/",
+                            },
+                            { name: "Kalendarz Szkolny",
+                               url: "#/schoolCalendar/",
+                            },
+                            { name: "Konkursy Przedmiotowe",
+                               url: "#/subjectCompetitions/",
+                            },
                 ];
  
      $scope.school = [
