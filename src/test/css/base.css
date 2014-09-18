@@ -321,7 +321,7 @@ img.right {
 .sidebar li li {
     margin: 0 20px 0 15px;
     padding: 8px 0px;
-    border-bottom: 1px #BBBBBB dashed;
+/*    border-bottom: 1px #BBBBBB dashed;*/
 }
 
 .sidebar li h2 {
@@ -459,7 +459,7 @@ img.right {
 }
 
 a.specialeffects {
-  color: #8C0209; /* czerwonaw */
+    color: #8C0209; /* czerwonaw */
 }
 
 a.specialeffects:hover {
