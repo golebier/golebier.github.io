@@ -298,6 +298,11 @@ img.right {
     float: right;
 }
 
+
+
+
+
+
 .sidebar {
     float: left;
     width: 220px;
@@ -321,7 +326,7 @@ img.right {
 .sidebar li li {
     margin: 0 20px 0 15px;
     padding: 8px 0px;
-/*    border-bottom: 1px #BBBBBB dashed;*/
+    border-bottom: 1px #BBBBBB dashed;
 }
 
 .sidebar li h2 {
@@ -348,6 +353,60 @@ img.right {
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 12px;
 }
+
+
+
+/* >>>> simple solution, make it nicer */
+.lesssidebar {
+    float: left;
+    width: 220px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.lesssidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lesssidebar li {
+    padding: 0 0 20px 0;
+}
+
+.lesssidebar li ul {
+}
+
+.lesssidebar li li {
+    margin: 0 20px 0 15px;
+    padding: 8px 0px;
+}
+
+.lesssidebar li h2 {
+    height: 30px;
+    margin: 0 0 0 0;
+    padding: 10px 15px 0px 15px;
+    background: #890208 url(../images/menusmall.jpg) no-repeat left top;
+    letter-spacing: -1px;
+    font-size: 16px;
+  color: #8C0209; /* czerwonaw */
+}
+
+.lesssidebar a {
+}
+
+.lesssidebar a:hover {
+  color: black;
+  background-color: #FF0;
+
+  /* Safari 3-4, iOS 1-3.2, Android 1.6-
+  -webkit-border-radius: 12px;*/
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 12px;
+}
+/* <<<< simple solution, make it nicer */
 
 /* Search */
 
