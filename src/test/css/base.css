@@ -380,6 +380,7 @@ img.right {
 .lesssidebar li li {
     margin: 0 20px 0 15px;
     padding: 8px 0px;
+    border-bottom: 1px #BBBBBB dashed;
 }
 
 .lesssidebar li h2 {
