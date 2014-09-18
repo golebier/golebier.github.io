@@ -82,14 +82,16 @@
                   <ul>
                       <li>
                             <h2 id="school">
-                                <a class="menuspec">
+                                <a class="menuspec" ng-init="show=false" ng-mouseenter="show=true" ng-mouseleave="show=false">
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
                             <ul ng-repeat="item in school">
                                <li>
                                  <a class="specialeffects" href="{{item.url}}">
-                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                    <dev ng-show="show">
+                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                   	</dev>
                                  </a>
                                </li>
                             </ul>
