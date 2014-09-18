@@ -81,7 +81,8 @@
      TODO change css definition
 -->
               <div id="sidebar1" ng-controller="menu"
-              	ng-class="{'lesssidebar' : isFasle(), 'sidebar' : isTrue()}">
+                   ng-style="isFasle() && {'border-bottom': 'none'} ||
+                             isTrue() && {'border-bottom': '1px #BBBBBB dashed'}">
                   <ul ng-mouseleave="show=false">
                       <li>
                             <h2 id="school">
