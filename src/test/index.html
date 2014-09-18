@@ -77,11 +77,11 @@
 
         <div id="wrapper">
             <div id="page">
-<!-- TODO animate, show/hide -->
-              <div id="sidebar1" ng-controller="menu" ng-class="{'lesssidebar' : isFasle(), 'sidebar' : isTrue()}">
-<!--
+<!-- TODO animate, show/hide
      TODO change css definition
 -->
+              <div id="sidebar1" ng-controller="menu"
+              	ng-class="{'lesssidebar' : isFasle(), 'sidebar' : isTrue()}">
                   <ul ng-mouseleave="show=false">
                       <li>
                             <h2 id="school">
@@ -91,7 +91,7 @@
                             </h2>
                             <ul ng-repeat="item in school">
                                <li>
-                                 <div ng-show="show">
+                                 <div ng-show="isTrue()">
 	                                 <a class="specialeffects" href="{{item.url}}">
 	                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
 	                                 </a>

@@ -336,7 +336,7 @@ img.right {
     background: #890208 url(../images/menusmall.jpg) no-repeat left top;
     letter-spacing: -1px;
     font-size: 16px;
-  color: #8C0209; /* czerwonaw */
+    color: #8C0209; /* czerwonaw */
 }
 
 .sidebar a {
@@ -380,7 +380,6 @@ img.right {
 .lesssidebar li li {
     margin: 0 20px 0 15px;
     padding: 8px 0px;
-    border-bottom: 1px #BBBBBB dashed;
 }
 
 .lesssidebar li h2 {

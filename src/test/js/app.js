@@ -92,10 +92,10 @@ app.controller('menu', function($scope) {
                       ];
      $scope.show = false;
      $scope.isTrue = function () {
-         return true == $scope.show;
+         return true === $scope.show;
      };
 
      $scope.isFalse = function () {
-         return false == $scope.show;
+         return false === $scope.show;
      };
 });
