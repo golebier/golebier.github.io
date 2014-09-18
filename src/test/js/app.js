@@ -90,12 +90,12 @@ app.controller('menu', function($scope) {
                                 url: "#/stowarzyszenie/",
                             }
                       ];
-
-     $scope.isTrue = function (show) {
-         return true == show;
+     $scope.show = false;
+     $scope.isTrue = function () {
+         return true == $scope.show;
      };
 
-     $scope.isFalse = function (show) {
-         return false == show;
+     $scope.isFalse = function () {
+         return false == $scope.show;
      };
 });
