@@ -114,15 +114,15 @@
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <ul ng-repeat="item in school">
-                               <li>
-                                 <div ng-show="show">
-	                                 <a class="specialeffects" href="{{item.url}}">
-	                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-	                                 </a>
-                               	 </div>
-                               </li>
-                            </ul>
+                            <div ng-show="show">
+	                            <ul ng-repeat="item in school">
+	                               <li>
+		                                 <a class="specialeffects" href="{{item.url}}">
+		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+		                                 </a>
+	                               </li>
+	                            </ul>
+                            </div>
                        </li>
                     </ul>
                 </div>
