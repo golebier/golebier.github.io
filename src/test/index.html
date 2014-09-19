@@ -79,8 +79,9 @@
             <div id="page">
 <!-- TODO animate, show/hide
      TODO change css definition
+
 -->
-              <div id="sidebar1" ng-controller="menu" ng-class="{'lesssidebar' : isFasle(), 'sidebar' : isTrue()}">
+              <div id="sidebar1" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
                   <ul ng-mouseleave="show=false">
                       <li>
                             <h2 id="school">

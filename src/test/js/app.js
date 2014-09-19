@@ -91,11 +91,7 @@ app.controller('menu', function($scope) {
                             }
                       ];
      $scope.show = false;
-     $scope.isTrue = function () {
-         return true === $scope.show;
-     };
-
-     $scope.isFalse = function () {
-         return false === $scope.show;
+     $scope.prepareClassForSidebarLeft = function () {
+         return $scope.show?"sidebar":"lesssidebar";
      };
 });
