@@ -79,7 +79,6 @@
             <div id="page">
 <!-- TODO animate, show/hide
      TODO change css definition
-
 -->
               <div id="sidebar1" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
                   <ul ng-mouseleave="show=false">
@@ -101,6 +100,28 @@
                        </li>
                     </ul>
                 </div>
+<!-- >>>> TODO just for test, fill it with correct content  -->
+              <div id="sidebar1" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
+                  <ul ng-mouseleave="show=false">
+                      <li>
+                            <h2 id="school">
+                                <a class="menuspec" ng-mousedown="show=true">
+                                  &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
+                                </a>
+                            </h2>
+                            <ul ng-repeat="item in school">
+                               <li>
+                                 <div ng-show="show">
+	                                 <a class="specialeffects" href="{{item.url}}">
+	                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+	                                 </a>
+                               	 </div>
+                               </li>
+                            </ul>
+                       </li>
+                    </ul>
+                </div>
+<!-- <<<< TODO just for test, fill it with correct content  -->
 
                 <div id="content">
                     <div class="flower">
