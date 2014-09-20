@@ -138,6 +138,6 @@ app.controller('menu', function($scope) {
      ];
      $scope.show = false;
      $scope.prepareClassForSidebarLeft = function () {
-         return $scope.show?"sidebar":"lesssidebar";
+         return "sidebar";//$scope.show?"sidebar":"lesssidebar";
      };
 });
