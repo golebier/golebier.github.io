@@ -142,8 +142,8 @@
                 </div>
 
                 <div id="sidebar2" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
-                    <ul ng-mouseleave="show=false">
-                        <li>
+                    <ul>
+                        <li ng-mouseleave="show=false">
                             <div>
                                 <h2 id="search">
                                     <a class="menuspec">
@@ -162,8 +162,13 @@
                                   </form>
                             </div>
                         </li>
-        
-                        <li>
+<!--  ok, then css is need to be changed -->
+        			</ul>
+        		</div>
+                <div id="sidebar2" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
+                    <ul>
+
+                        <li ng-mouseleave="show=false">
                             <h2 id="parentinfo">
                                   <a class="menuspec" ng-mousedown="show=true">
                                     &nbsp;&nbsp; Informacje &nbsp;&nbsp;
