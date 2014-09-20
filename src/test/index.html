@@ -141,8 +141,8 @@
         
                 </div>
 
-                <div id="sidebar2" class="sidebar" ng-controller="menu">
-                    <ul>
+                <div id="sidebar2" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
+                    <ul ng-mouseleave="show=false">
                         <li>
                             <div>
                                 <h2 id="search">
@@ -165,18 +165,38 @@
         
                         <li>
                             <h2 id="parentinfo">
-                                  <a class="menuspec">
+                                  <a class="menuspec" ng-mousedown="show=true">
                                     &nbsp;&nbsp; Informacje &nbsp;&nbsp;
                                   </a>
                             </h2>
 <!-- TODO animate, show/hide -->
-                            <ul ng-repeat="item in parentinfo">
-                               <li>
-                                 <a class="specialeffects" href="{{item.url}}">
-                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-                                 </a>
-                               </li>
-                            </ul>
+                            <div ng-show="show">
+	                            <ul ng-repeat="item in parentinfo">
+	                               <li>
+	                                 <a class="specialeffects" href="{{item.url}}">
+	                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+	                                 </a>
+	                               </li>
+	                            </ul>
+                			</div>
+                        </li>
+        
+                        <li>
+                            <h2 id="parentinfo">
+                                  <a class="menuspec" ng-mousedown="show=true">
+                                    &nbsp;&nbsp; Biblioteka &nbsp;&nbsp;
+                                  </a>
+                            </h2>
+<!-- TODO animate, show/hide Library-->
+                            <div ng-show="show">
+	                            <ul ng-repeat="item in library">
+	                               <li>
+	                                 <a class="specialeffects" href="{{item.url}}">
+	                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+	                                 </a>
+	                               </li>
+	                            </ul>
+                			</div>
                         </li>
                     </ul>
                 </div>

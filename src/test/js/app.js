@@ -103,6 +103,39 @@ app.controller('menu', function($scope) {
                                 url: "#/stowarzyszenie/",
                             }
                       ];
+
+     $scope.library = [
+                        { name: "Stara strona",
+                           url: "http://www.sp12plock.pl/biblioteka/index.html",
+                        },
+                        { name: "O bibliotece",
+                           url: "#/aboutLibrary/",
+                        },
+                        { name: "Lektury",
+                           url: "#/lectures/",
+                        },
+                        { name: "Czytelnictwo",
+                           url: "#/readRates/",
+                        },
+                        { name: "Regulaminy",
+                           url: "#/regulations/",
+                        },
+                        { name: "Konkursy",
+                           url: "#/competitions/",
+                        },
+                        { name: "Imprezy",
+                           url: "#/events/",
+                        },
+                        { name: "Złota Lista",
+                            url: "#/goldenList/",
+                        },
+                        { name: "Fotogaleria",
+                            url: "#/photoGallery/",
+                        },
+                        { name: "Przydatne strony",
+                            url: "#/usefulWebSides/",
+                        },
+     ];
      $scope.show = false;
      $scope.prepareClassForSidebarLeft = function () {
          return $scope.show?"sidebar":"lesssidebar";
