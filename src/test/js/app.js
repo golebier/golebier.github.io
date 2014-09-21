@@ -14,6 +14,20 @@
 
 var app = angular.module('sp12', ['ngRoute']);
 
+
+app.config(function ($routeProvider) {
+	   $routeProvider
+	      .when('/', {
+	    	  // TODO read f from file?
+	          controller: function($scope, $location, $route) {
+	        	  // TODO
+                },
+	          templateUrl: 'htmls/views/main.html'
+	      })
+	      // TODO add more, CSM via W3/Mob/...
+	      .otherwise({redirectTo: '/'});
+});
+
 app.controller('footer', function($scope) {
      $scope.accounts = [
                             { name: "Linkedin",
@@ -34,7 +48,7 @@ app.controller('footer', function($scope) {
 app.controller('menu', function($scope) {
      $scope.main = [
                             { name: "Strona Główna",
-                               url: "#/main",
+                               url: "#/", // main
                             },
                             { name: "Fotogaleria",
                                url: "#/fotogallery",

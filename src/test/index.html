@@ -113,7 +113,7 @@
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="show">
+                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
 	                            <ul ng-repeat="item in school">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
@@ -129,6 +129,7 @@
 
 
                 <div id="content">
+<!--                TODO maybe this should be as include on each one as needed -->
                     <div class="flower">
                        <img
                            src="images/sp12.jpg"
@@ -136,6 +137,7 @@
                            width="510"
                            height="250" />
                     </div>
+
                     <div ng-view="" class="ng-scope">
                     </div>
         

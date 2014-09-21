@@ -323,15 +323,10 @@ img.right {
 .sidebar li ul {
 }
 
-.sidebar li li:hover {
-    margin: 0 20px 0 15px;
-    padding: 8px 0px;
-    border-bottom: 1px #BBBBBB dashed;
-}
-
 .sidebar li li {
     margin: 0 20px 0 15px;
     padding: 8px 0px;
+    border-bottom: 1px #BBBBBB dashed;
 }
 
 .sidebar li h2 {
