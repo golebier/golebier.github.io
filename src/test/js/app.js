@@ -51,104 +51,126 @@ app.controller('menu', function($scope) {
                                url: "#/", // main
                             },
                             { name: "Fotogaleria",
-                               url: "#/fotogallery",
+                               url: "#/fotogallery"
                             },
                             { name: "Cyfrowa Szkola",
-                               url: "#/ishool",
+                               url: "#/ishool"
                             },
                             { name: "Prawo Szkolne",
-                               url: "#/schoollow",
+                               url: "#/schoollow"
                             },
                             { name: "O Szkole",
-                               url: "#/aboutas",
+                               url: "#/aboutas"
                             },
                             { name: "Kontakt",
-                               url: "#/contact",
+                               url: "#/contact"
                             },
                             { name: "Archiwalna",
-                               url: "http://www.sp12plock.pl/",
+                               url: "http://www.sp12plock.pl/"
                             }
                         ];
 
      $scope.parentinfo = [
                             { name: "e-dziennik",
-                               url: "#/eRegister/",
+                               url: "#/eRegister/"
                             },
                             { name: "Pierwszak w szkole",
-                               url: "#/fromkinderganden/",
+                               url: "#/fromkinderganden/"
                             },
                             { name: "Zebrania",
-                               url: "#/meetings/",
+                               url: "#/meetings/"
                             },
                             { name: "Kalendarz Szkolny",
-                               url: "#/schoolCalendar/",
+                               url: "#/schoolCalendar/"
                             },
                             { name: "Konkursy Przedmiotowe",
-                               url: "#/subjectCompetitions/",
+                               url: "#/subjectCompetitions/"
                             },
                 ];
  
      $scope.school = [
                             { name: "Plan zajęć",
-                                url: "#/lessonsPlans/",
+                                url: "#/lessonsPlans/"
                             },
                             { name: "Rada Pedagogiczna",
-                                url: "#/radapedadogiczna",
+                                url: "#/radapedadogiczna"
                             },
                             { name: "Samorząd Uczniowski",
-                                url: "#/samorzaduczniowski",
+                                url: "#/samorzaduczniowski"
                             },
                             { name: "Osiągnięcia",
-                                url: "#/osiagniecia",
+                                url: "#/osiagniecia"
                             },
                             { name: "Zajęcia Pozalekcyjne",
-                                url: "http://www.sp12plock.pl/zajecia_pozalekcyjne.html/",
+                                url: "http://www.sp12plock.pl/zajecia_pozalekcyjne.html/"
                             },
                             { name: "Świetlica",
-                                url: "#/swietlica/",
+                                url: "#/swietlica/"
                             },
                             { name: "Podręczniki",
-                                url: "#/podreczniki/",
+                                url: "#/podreczniki/"
                             },
                             { name: "Stypendia",
-                                url: "#/stypendia/",
+                                url: "#/stypendia/"
                             },
                             { name: "Stowarzyszenie",
-                                url: "#/stowarzyszenie/",
+                                url: "#/stowarzyszenie/"
                             }
                       ];
 
      $scope.library = [
                         { name: "Stara strona",
-                           url: "http://www.sp12plock.pl/biblioteka/index.html",
+                           url: "http://www.sp12plock.pl/biblioteka/index.html"
                         },
                         { name: "O bibliotece",
-                           url: "#/aboutLibrary/",
+                           url: "#/aboutLibrary/"
                         },
                         { name: "Lektury",
-                           url: "#/lectures/",
+                           url: "#/lectures/"
                         },
                         { name: "Czytelnictwo",
-                           url: "#/readRates/",
+                           url: "#/readRates/"
                         },
                         { name: "Regulaminy",
-                           url: "#/regulations/",
+                           url: "#/regulations/"
                         },
                         { name: "Konkursy",
-                           url: "#/competitions/",
+                           url: "#/competitions/"
                         },
                         { name: "Imprezy",
-                           url: "#/events/",
+                           url: "#/events/"
                         },
                         { name: "Złota Lista",
-                            url: "#/goldenList/",
+                            url: "#/goldenList/"
                         },
                         { name: "Fotogaleria",
-                            url: "#/photoGallery/",
+                            url: "#/photoGallery/"
                         },
                         { name: "Przydatne strony",
-                            url: "#/usefulWebSides/",
+                            url: "#/usefulWebSides/"
+                        }
+     ];
+
+     $scope.archive = [
+                        // months
+                        { name: "Wrzesień",
+                           url: "201409",
+                           amount: "12"
+                           
                         },
+                        { name: "Sierpień",
+                           url: "201408",
+                        amount: "5"
+                        },
+                        // years, after the calendar new year, above changes to year ...
+                        { name: "2013",
+                           url: "2013",
+                        amount: "144"
+                        },
+                        { name: "2012",
+                            url: "2012",
+                         amount: "156"
+                        }
      ];
      $scope.show = false;
      $scope.prepareClassForSidebarLeft = function () {

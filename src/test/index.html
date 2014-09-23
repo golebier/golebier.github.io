@@ -83,7 +83,7 @@
               <div id="sidebar1" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
                   <ul ng-mouseleave="show=false">
                       <li>
-                            <h2 id="school">
+                            <h2>
                                 <a class="menuspec" ng-mousedown="show=true">
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
@@ -108,7 +108,7 @@
 -->
                   <ul ng-mouseleave="show=false">
                       <li>
-                            <h2 id="school">
+                            <h2>
                                 <a class="menuspec" ng-mousedown="show=true">
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
@@ -119,6 +119,25 @@
 		                                 <a class="specialeffects" href="{{item.url}}">
 		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
 		                                 </a>
+	                               </li>
+	                            </ul>
+                            </div>
+                       </li>
+                    </ul>
+                    <ul ng-mouseleave="show=false">
+                      <li>
+                            <h2>
+                                <a class="menuspec" ng-mousedown="show=true">
+                                  &nbsp;&nbsp; Archiwum &nbsp;&nbsp;
+                                </a>
+                            </h2>
+                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
+<!--                            TODO months, yesra -->
+	                            <ul ng-repeat="item in archive">
+	                               <li>
+		                                 <a class="specialeffects" href="{{item.url}}">
+		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+		                                 </a> ({{item.amount}})
 	                               </li>
 	                            </ul>
                             </div>
