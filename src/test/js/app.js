@@ -172,6 +172,19 @@ app.controller('menu', function($scope) {
                          amount: "156"
                         }
      ];
+
+     $scope.sport = [
+                        { name: "Program Otwarte Szkolne Obiekty Sportowe",
+                           url: "posos"
+                           
+                        },
+                        { name: "ORLEN Szkolna Liga MDK",
+                           url: "oslmkd"
+                        },
+                        { name: "ORLEN Szkolna Liga MDK",
+                           url: "http://www.sp12plock.pl/liga-mdk.html"
+                        }
+     ];
      $scope.show = false;
      $scope.prepareClassForSidebarLeft = function () {
          return "sidebar";//$scope.show?"sidebar":"lesssidebar";

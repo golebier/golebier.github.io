@@ -143,6 +143,24 @@
                             </div>
                        </li>
                     </ul>
+                    <ul ng-mouseleave="show=false">
+                      <li>
+                            <h2>
+                                <a class="menuspec" ng-mousedown="show=true">
+                                  &nbsp;&nbsp; Sport &nbsp;&nbsp;
+                                </a>
+                            </h2>
+                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
+	                            <ul ng-repeat="item in sport">
+	                               <li>
+		                                 <a class="specialeffects" href="{{item.url}}">
+		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+		                                 </a>
+	                               </li>
+	                            </ul>
+                            </div>
+                       </li>
+                    </ul>
                 </div>
 <!-- <<<< TODO just for test, fill it with correct content  -->
 
