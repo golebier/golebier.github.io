@@ -81,39 +81,15 @@
      TODO change css definition
 -->
               <div id="sidebar1" ng-controller="menu" class="{{prepareClassForSidebarLeft()}}">
-                  <ul ng-mouseleave="show=false">
+                  
+                  <ul ng-mouseleave="setState('school', false)">
                       <li>
                             <h2>
-                                <a class="menuspec" ng-mousedown="show=true">
+                                <a class="menuspec" ng-mousedown="setState('school', true)">
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="show">
-	                            <ul ng-repeat="item in school">
-	                               <li>
-		                                 <a class="specialeffects" href="{{item.url}}">
-		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-		                                 </a>
-	                               </li>
-	                            </ul>
-                          	</div>
-                       </li>
-                    </ul>
-<!--                 </div> -->
-<!-- >>>> TODO just for test, fill it with correct content 
-          ok, then:
-          1. add show field by menu, as aray of bools via menu name as key?
-          2. do config by user, then user can select with style prefer, Show/Hide or static Show ;)
-          3.  
--->
-                  <ul ng-mouseleave="show=false">
-                      <li>
-                            <h2>
-                                <a class="menuspec" ng-mousedown="show=true">
-                                  &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
-                                </a>
-                            </h2>
-                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
+                            <div ng-show="getState('school')" class="{{prepareClassForSidebarLeft()}}">
 	                            <ul ng-repeat="item in school">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
@@ -124,15 +100,22 @@
                             </div>
                        </li>
                     </ul>
-                    <ul ng-mouseleave="show=false">
+<!--                 </div> -->
+<!-- >>>> TODO just for test, fill it with correct content 
+          ok, then:
+          1. add show field by menu, as aray of bools via menu name as key?
+          2. do config by user, then user can select with style prefer, Show/Hide or static Show ;)
+          3.  
+-->
+                    <ul ng-mouseleave="setState('archive', false)">
                       <li>
                             <h2>
-                                <a class="menuspec" ng-mousedown="show=true">
+                                <a class="menuspec" ng-mousedown="setState('archive', true)">
                                   &nbsp;&nbsp; Archiwum &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
-<!--                            TODO months, yesra -->
+                            <div ng-show="getShow('archive')" class="{{prepareClassForSidebarLeft()}}">
+<!--                            TODO months, years -->
 	                            <ul ng-repeat="item in archive">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
@@ -203,14 +186,14 @@
                             </div>
                         </li>
 
-                        <li ng-mouseleave="show=false">
+                        <li ng-mouseleave="setState('informations', false)">
                             <h2 id="parentinfo">
-                                  <a class="menuspec" ng-mousedown="show=true">
+                                  <a class="menuspec" ng-mousedown="setState('informations', true)">
                                     &nbsp;&nbsp; Informacje &nbsp;&nbsp;
                                   </a>
                             </h2>
 <!-- TODO animate, show/hide -->
-                            <div ng-show="show">
+                            <div ng-show="getState('informations')">
 	                            <ul ng-repeat="item in parentinfo">
 	                               <li>
 	                                 <a class="specialeffects" href="{{item.url}}">
@@ -221,14 +204,14 @@
                 			</div>
                         </li>
 
-                        <li>
+                        <li ng-mouseleave="setState('library', false)">
                             <h2 id="parentinfo">
-                                  <a class="menuspec" ng-mousedown="show=true">
+                                  <a class="menuspec" ng-mousedown="setState('library', true)">
                                     &nbsp;&nbsp; Biblioteka &nbsp;&nbsp;
                                   </a>
                             </h2>
 <!-- TODO animate, show/hide Library-->
-                            <div ng-show="show">
+                            <div ng-show="getState('library')">
 	                            <ul ng-repeat="item in library">
 	                               <li>
 	                                 <a class="specialeffects" href="{{item.url}}">
