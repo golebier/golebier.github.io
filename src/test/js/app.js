@@ -191,11 +191,12 @@ app.controller('menu', function($scope) {
          return "sidebar";//$scope.show?"sidebar":"lesssidebar";
      };
 
+     $scope.showList['Sport'] = false;
      $scope.showState = function (position) {
-         return showList[position];
+         return $scope.showList[position];
      };
 
      $scope.showState = function (position, state) {
-         return showList[position] = state;
+         return $scope.showList[position] = state;
      };
 });
