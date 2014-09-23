@@ -178,9 +178,9 @@ app.controller('menu', function($scope) {
                            url: "posos"
                            
                         },
-                        { name: "ORLEN Szkolna Liga MDK",
-                           url: "oslmkd"
-                        },
+//                        { name: "ORLEN Szkolna Liga MDK",
+//                           url: "oslmkd"
+//                        },
                         { name: "ORLEN Szkolna Liga MDK",
                            url: "http://www.sp12plock.pl/liga-mdk.html"
                         }
