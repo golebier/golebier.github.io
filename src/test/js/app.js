@@ -185,8 +185,17 @@ app.controller('menu', function($scope) {
                            url: "http://www.sp12plock.pl/liga-mdk.html"
                         }
      ];
+     // deprecated TODO remove after all menus are corrected
      $scope.show = false;
      $scope.prepareClassForSidebarLeft = function () {
          return "sidebar";//$scope.show?"sidebar":"lesssidebar";
+     };
+
+     $scope.showState = function (position) {
+         return showList[position];
+     };
+
+     $scope.showState = function (position, state) {
+         return showList[position] = state;
      };
 });

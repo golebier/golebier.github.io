@@ -143,14 +143,14 @@
                             </div>
                        </li>
                     </ul>
-                    <ul ng-mouseleave="show=false">
+                    <ul ng-mouseleave="showState('Sport', false)">
                       <li>
                             <h2>
-                                <a class="menuspec" ng-mousedown="show=true">
+                                <a class="menuspec" ng-mousedown="showState('Sport', true)">
                                   &nbsp;&nbsp; Sport &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="show" class="{{prepareClassForSidebarLeft()}}">
+                            <div ng-show="showState('Sport')" class="{{prepareClassForSidebarLeft()}}">
 	                            <ul ng-repeat="item in sport">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
