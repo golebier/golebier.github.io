@@ -193,11 +193,11 @@ app.controller('menu', function($scope) {
 
      var showList = {};
      showList['Sport'] = false;
-     $scope.showState = function (position) {
+     $scope.getState = function (position) {
          return showList[position];
      };
 
-     $scope.showState = function (position, state) {
+     $scope.setState = function (position, state) {
          showList[position] = state;
      };
 });
