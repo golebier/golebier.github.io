@@ -194,7 +194,7 @@ app.controller('menu', function($scope) {
      };
 
      var showList = {};
-     showList['Sport'] = false;
+//     showList['Sport'] = false;
      $scope.getState = function (position) {
          return showList[position];
      };
