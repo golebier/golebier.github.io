@@ -108,24 +108,6 @@
           3.  
 -->
                     <ul>
-                      <li ng-mouseleave="setState('archive', false)">
-                            <h2>
-                                <a class="menuspec" ng-mousedown="setState('archive', true)">
-                                  &nbsp;&nbsp; Archiwum &nbsp;&nbsp;
-                                </a>
-                            </h2>
-                            <div ng-show="getShow('archive')">
-	                            <ul ng-repeat="item in archive">
-	                               <li>
-		                                 <a class="specialeffects" href="{{item.url}}">
-		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-		                                 </a> ({{item.amount}})
-	                               </li>
-	                            </ul>
-                            </div>
-                       </li>
-                    </ul>
-                    <ul>
                       <li ng-mouseleave="setState('Sport', false)">
                             <h2>
                                 <a class="menuspec" ng-mousedown="setState('Sport', true)">
@@ -138,6 +120,24 @@
 		                                 <a class="specialeffects" href="{{item.url}}">
 		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
 		                                 </a>
+	                               </li>
+	                            </ul>
+                            </div>
+                       </li>
+                    </ul>
+                    <ul>
+                      <li ng-mouseleave="setState('archive', false)">
+                            <h2>
+                                <a class="menuspec" ng-mousedown="setState('archive', true)">
+                                  &nbsp;&nbsp; Archiwum &nbsp;&nbsp;
+                                </a>
+                            </h2>
+                            <div ng-show="getShow('archive')">
+	                            <ul ng-repeat="item in archive">
+	                               <li>
+		                                 <a class="specialeffects" href="{{item.url}}">
+		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+		                                 </a> ({{item.amount}})
 	                               </li>
 	                            </ul>
                             </div>
