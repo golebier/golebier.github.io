@@ -191,9 +191,7 @@ app.controller('menu', function($scope) {
      };
 
      var showList = {};
-     showList['school'] = false;
-     showList['archive'] = false;
-     showList['Sport'] = false;
+
      $scope.getState = function (position) {
          return showList[position];
      };
