@@ -186,15 +186,14 @@ app.controller('menu', function($scope) {
                         }
      ];
 
-     // deprecated TODO remove after all menus are corrected
-     $scope.show = false;
-
      $scope.prepareClassForSidebarLeft = function () {
          return "sidebar";//$scope.show?"sidebar":"lesssidebar";
      };
 
      var showList = {};
-//     showList['Sport'] = false;
+     showList['school'] = false;
+     showList['archive'] = false;
+     showList['Sport'] = false;
      $scope.getState = function (position) {
          return showList[position];
      };
