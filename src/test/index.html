@@ -89,7 +89,7 @@
                                   &nbsp;&nbsp; Szkolne Życie &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="getState('school')" class="{{prepareClassForSidebarLeft()}}">
+                            <div ng-show="getState('school')">
 	                            <ul ng-repeat="item in school">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
@@ -114,7 +114,7 @@
                                   &nbsp;&nbsp; Archiwum &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="getShow('archive')" class="{{prepareClassForSidebarLeft()}}">
+                            <div ng-show="getShow('archive')">
 <!--                            TODO months, years -->
 	                            <ul ng-repeat="item in archive">
 	                               <li>
@@ -133,7 +133,7 @@
                                   &nbsp;&nbsp; Sport &nbsp;&nbsp;
                                 </a>
                             </h2>
-                            <div ng-show="getState('Sport')" class="{{prepareClassForSidebarLeft()}}">
+                            <div ng-show="getState('Sport')">
 	                            <ul ng-repeat="item in sport">
 	                               <li>
 		                                 <a class="specialeffects" href="{{item.url}}">
