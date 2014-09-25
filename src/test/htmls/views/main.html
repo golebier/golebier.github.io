@@ -1,5 +1,16 @@
 
 <!-- TODO add correct ng-controller -->
-<div>
-    main-test
+<div class="post" ng-controller="menu">
+    <ul ng-repeat="item in news">
+       <li>
+			  <h2 class="title">
+                  {{item.text}}
+			  </h2>
+             <a class="specialeffects" href="{{item.url}}">
+                    &nbsp;&nbsp; {{item.urlname}} &nbsp;&nbsp;
+             </a>
+             <p class="byline">
+             </p>
+       </li>
+    </ul>
 </div>
