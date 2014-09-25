@@ -154,28 +154,28 @@ app.controller('menu', function($scope) {
      $scope.archive = [
                         // months
                         { name: "Wrzesień",
-                           url: "201409",
+                           url: "#/201409",
                            amount: "12"
                            
                         },
                         { name: "Sierpień",
-                           url: "201408",
+                           url: "#/201408",
                         amount: "5"
                         },
                         // years, after the calendar new year, above changes to year ...
                         { name: "2013",
-                           url: "2013",
+                           url: "#/2013",
                         amount: "144"
                         },
                         { name: "2012",
-                            url: "2012",
+                            url: "#/2012",
                          amount: "156"
                         }
      ];
 
      $scope.sport = [
                         { name: "Program Otwarte Szkolne Obiekty Sportowe",
-                           url: "posos"
+                           url: "#/posos"
                            
                         },
 //                        { name: "ORLEN Szkolna Liga MDK",
@@ -191,28 +191,28 @@ app.controller('menu', function($scope) {
            { 
         	   text: "Dnia 18 września 2014 roku w sali gimnastycznej naszej szkoły odbyły się eliminacje do Zespołu Pieśni i Tańca „Wisła” Płockiego Ośrodka Kultury i Sztuki...",
         	   urlname: "czytaj więcej...",
-               //url: "news.0"
+               //url: "#/news.0"
         	   url: "http://sp12plock.pl/aktualnosci.html"
            },
            { 
         	   text: "Dnia 17 września 2014 roku, w sali gimnastycznej naszej szkoły,  odbyło się spotkanie z Panem Policjantem w ramach programu „Bezpieczna droga do szkoły”...",
         	   urlname: "czytaj więcej...",
-               url: "news.1"
+               url: "#/news.1"
            },
            { 
         	   text: "Dnia 12 września 2014 roku, w godz. 10.00-13.00, w Ogródku Jordanowskim miał miejsce Piknik Literacki z okazji obchodów Roku Czytelnika...",
         	   urlname: "czytaj więcej...",
-               url: "news.2"
+               url: "#/news.2"
            },
            { 
         	   text: "Dnia 6 września 2014 roku, w sobotnie popołudnie, odbyło się NARODOWE CZYTANIE „Potopu” Henryka Sienkiewiczaw ramach ogólnopolskiej akcji publicznego czytania...",
         	   urlname: "czytaj więcej...",
-               url: "news.3"
+               url: "#/news.3"
            },
            { 
         	   text: "Dnia 1 września 2014 roku o godz. 9.00 odbyło się uroczyste rozpoczęcie roku szkolnego 2014/2015.",
         	   urlname: "czytaj więcej...",
-               url: "news.4"
+               url: "#/news.4"
            }
      ];
 
