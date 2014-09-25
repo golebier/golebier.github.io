@@ -189,28 +189,28 @@ app.controller('menu', function($scope) {
      // TODO by urr:ID
      $scope.news = [
            { 
-        	   text: "Dnia 18 września 2014 roku w sali gimnastycznej naszej szkoły odbyły się eliminacje do Zespołu Pieśni i Tańca „Wisła” Płockiego Ośrodka Kultury i Sztuki..."
+        	   text: "Dnia 18 września 2014 roku w sali gimnastycznej naszej szkoły odbyły się eliminacje do Zespołu Pieśni i Tańca „Wisła” Płockiego Ośrodka Kultury i Sztuki...",
         	   urlname: "czytaj więcej...",
                //url: "news.0"
         	   url: "http://sp12plock.pl/aktualnosci.html"
            },
            { 
-        	   text: "Dnia 17 września 2014 roku, w sali gimnastycznej naszej szkoły,  odbyło się spotkanie z Panem Policjantem w ramach programu „Bezpieczna droga do szkoły”..."
+        	   text: "Dnia 17 września 2014 roku, w sali gimnastycznej naszej szkoły,  odbyło się spotkanie z Panem Policjantem w ramach programu „Bezpieczna droga do szkoły”...",
         	   urlname: "czytaj więcej...",
                url: "news.1"
            },
            { 
-        	   text: "Dnia 12 września 2014 roku, w godz. 10.00-13.00, w Ogródku Jordanowskim miał miejsce Piknik Literacki z okazji obchodów Roku Czytelnika..."
+        	   text: "Dnia 12 września 2014 roku, w godz. 10.00-13.00, w Ogródku Jordanowskim miał miejsce Piknik Literacki z okazji obchodów Roku Czytelnika...",
         	   urlname: "czytaj więcej...",
                url: "news.2"
            },
            { 
-        	   text: "Dnia 6 września 2014 roku, w sobotnie popołudnie, odbyło się NARODOWE CZYTANIE „Potopu” Henryka Sienkiewiczaw ramach ogólnopolskiej akcji publicznego czytania..."
+        	   text: "Dnia 6 września 2014 roku, w sobotnie popołudnie, odbyło się NARODOWE CZYTANIE „Potopu” Henryka Sienkiewiczaw ramach ogólnopolskiej akcji publicznego czytania...",
         	   urlname: "czytaj więcej...",
                url: "news.3"
            },
            { 
-        	   text: "Dnia 1 września 2014 roku o godz. 9.00 odbyło się uroczyste rozpoczęcie roku szkolnego 2014/2015."
+        	   text: "Dnia 1 września 2014 roku o godz. 9.00 odbyło się uroczyste rozpoczęcie roku szkolnego 2014/2015.",
         	   urlname: "czytaj więcej...",
                url: "news.4"
            }
