@@ -90,13 +90,13 @@
                                 </a>
                             </h2>
                             <div ng-show="getState('school')">
-	                            <ul ng-repeat="item in school">
-	                               <li>
-		                                 <a class="specialeffects" href="{{item.url}}">
-		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-		                                 </a>
-	                               </li>
-	                            </ul>
+                                <ul ng-repeat="item in school">
+                                   <li>
+                                         <a class="specialeffects" href="{{item.url}}">
+                                                &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                         </a>
+                                   </li>
+                                </ul>
                             </div>
                        </li>
                     </ul>
@@ -115,13 +115,13 @@
                                 </a>
                             </h2>
                             <div ng-show="getState('Sport')">
-	                            <ul ng-repeat="item in sport">
-	                               <li>
-		                                 <a class="specialeffects" href="{{item.url}}">
-		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-		                                 </a>
-	                               </li>
-	                            </ul>
+                                <ul ng-repeat="item in sport">
+                                   <li>
+                                         <a class="specialeffects" href="{{item.url}}">
+                                                &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                         </a>
+                                   </li>
+                                </ul>
                             </div>
                        </li>
                     </ul>
@@ -133,13 +133,13 @@
                                 </a>
                             </h2>
                             <div ng-show="getShow('archive')">
-	                            <ul ng-repeat="item in archive">
-	                               <li>
-		                                 <a class="specialeffects" href="{{item.url}}">
-		                                    	&nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-		                                 </a> ({{item.amount}})
-	                               </li>
-	                            </ul>
+                                <ul ng-repeat="item in archive">
+                                   <li>
+                                         <a class="specialeffects" href="{{item.url}}">
+                                                &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                         </a> ({{item.amount}})
+                                   </li>
+                                </ul>
                             </div>
                        </li>
                     </ul>
@@ -193,14 +193,14 @@
                             </h2>
 <!-- TODO animate, show/hide -->
                             <div ng-show="getState('parentinfo')">
-	                            <ul ng-repeat="item in parentinfo">
-	                               <li>
-	                                 <a class="specialeffects" href="{{item.url}}">
-	                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-	                                 </a>
-	                               </li>
-	                            </ul>
-                			</div>
+                                <ul ng-repeat="item in parentinfo">
+                                   <li>
+                                     <a class="specialeffects" href="{{item.url}}">
+                                        &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                     </a>
+                                   </li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li ng-mouseleave="setState('library', false)">
@@ -211,14 +211,14 @@
                             </h2>
 <!-- TODO animate, show/hide Library-->
                             <div ng-show="getState('library')">
-	                            <ul ng-repeat="item in library">
-	                               <li>
-	                                 <a class="specialeffects" href="{{item.url}}">
-	                                    &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
-	                                 </a>
-	                               </li>
-	                            </ul>
-                			</div>
+                                <ul ng-repeat="item in library">
+                                   <li>
+                                     <a class="specialeffects" href="{{item.url}}">
+                                        &nbsp;&nbsp; {{item.name}} &nbsp;&nbsp;
+                                     </a>
+                                   </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>

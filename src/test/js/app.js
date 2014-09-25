@@ -16,16 +16,16 @@ var app = angular.module('sp12', ['ngRoute']);
 
 
 app.config(function ($routeProvider) {
-	   $routeProvider
-	      .when('/', {
-	    	  // TODO read f from file?
-	          controller: function($scope, $location, $route) {
-	        	  // TODO
+       $routeProvider
+          .when('/', {
+              // TODO read f from file?
+              controller: function($scope, $location, $route) {
+                  // TODO
                 },
-	          templateUrl: 'htmls/views/main.html'
-	      })
-	      // TODO add more, CSM via W3/Mob/...
-	      .otherwise({redirectTo: '/'});
+              templateUrl: 'htmls/views/main.html'
+          })
+          // TODO add more, CSM via W3/Mob/...
+          .otherwise({redirectTo: '/'});
 });
 
 app.controller('footer', function($scope) {
