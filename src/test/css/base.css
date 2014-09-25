@@ -261,7 +261,7 @@ img.right {
 }
 
 .entry {
-    padding: 0px 0px;
+    padding: 10px 10px 10px 0px;
 }
 
 .links {
@@ -272,7 +272,7 @@ img.right {
 
 .links a {
     border: none;
-  color: #8C0209; /* czerwonaw */
+    color: #8C0209; /* czerwonaw */
 }
 
 .links a:hover {
