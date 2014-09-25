@@ -3,14 +3,18 @@
 <div class="post" ng-controller="menu">
     <ul ng-repeat="item in news">
        <li>
+           <div class="entry">
 			  <h2 class="title">
                   {{item.text}}
 			  </h2>
-             <a class="specialeffects" href="{{item.url}}">
-                    &nbsp;&nbsp; {{item.urlname}} &nbsp;&nbsp;
-             </a>
+             <p class="links">
+                 <a class="specialeffects" href="{{item.url}}">
+                     &nbsp;&nbsp; {{item.urlname}} &nbsp;&nbsp;
+                 </a>
+             </p>
              <p class="byline">
              </p>
+           </div>
        </li>
     </ul>
 </div>
